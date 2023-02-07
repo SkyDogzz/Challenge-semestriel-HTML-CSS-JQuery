@@ -1,15 +1,14 @@
 {
-  "name": "challenge-semestriel-html-css-jquery",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
+  "name": "Challenge-semestriel-HTML-CSS-JQuery",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SkyDogzz/Challenge-semestriel-HTML-CSS-JQuery",
+  "author": "Axel <axel77g@hotmail.com>",
+  "license": "MIT",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "sass --watch sass:assets/css"
   },
-  "devDependencies": {
-    "scss": "^0.2.4",
-    "vite": "^4.1.0"
+  "dependencies": {
+    "sass": "^1.58.0"
   }
 }
