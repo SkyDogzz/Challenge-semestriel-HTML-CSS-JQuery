@@ -1,0 +1,21 @@
+$colors: (#e88011, #f38f1b, #ffb43d, #ffc059, #eeeeee, #fff, #000);
+$colorsNames: (
+  primary500,
+  primary400,
+  primary300,
+  primary200,
+  natural100,
+  natural0,
+  natural500
+);
+
+@for $i from 1 through length($colors) {
+  $color: nth($colors, $i);
+  $colorName: nth($colorsNames, $i);
+  .bg-#{$colorName} {
+    background-color: $color;
+  }
+  .text-#{$colorName} {
+    color: $color;
+  }
+}

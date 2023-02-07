@@ -1,0 +1,37 @@
+$remSpace: rem(0px), rem(5px), rem(10px), rem(15px);
+$direction: top, right, bottom, left;
+
+@for $i from 1 through length($remSpace) {
+  $n: $i - 1;
+  @for $j from 1 through length($direction) {
+    .m-#{nth($direction, $j)}-#{$n} {
+      margin-#{nth($direction, $j)}: nth($remSpace, $i);
+    }
+    .p-#{nth($direction, $j)}-#{$n} {
+      padding-#{nth($direction, $j)}: nth($remSpace, $i);
+    }
+  }
+
+  .m-#{$n} {
+    margin: nth($remSpace, $i);
+  }
+  .p-#{$n} {
+    padding: nth($remSpace, $i);
+  }
+  .px-#{$n} {
+    padding-left: nth($remSpace, $i);
+    padding-right: nth($remSpace, $i);
+  }
+  .py-#{$n} {
+    padding-top: nth($remSpace, $i);
+    padding-bottom: nth($remSpace, $i);
+  }
+  .mx-#{$n} {
+    margin-left: nth($remSpace, $i);
+    margin-right: nth($remSpace, $i);
+  }
+  .my-#{$n} {
+    margin-top: nth($remSpace, $i);
+    margin-bottom: nth($remSpace, $i);
+  }
+}

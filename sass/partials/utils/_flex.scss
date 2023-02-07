@@ -1,0 +1,24 @@
+$align-items: (flex-start, flex-end, center, baseline, stretch);
+$align-items-name: (start, end, center, baseline, stretch);
+
+$justify-content: (
+  flex-start,
+  flex-end,
+  center,
+  space-between,
+  space-around,
+  space-evenly
+);
+$justyfy-content-name: (start, end, center, between, around, evenly);
+
+@for $i from 1 through length($align-items) {
+  .align-#{nth($align-items-name, $i)} {
+    align-items: nth($align-items, $i);
+  }
+}
+
+@for $i from 1 through length($justify-content) {
+  .justify-#{nth($justyfy-content-name, $i)} {
+    justify-content: nth($justify-content, $i);
+  }
+}
