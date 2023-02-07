@@ -1,6 +1,63 @@
-nav {
-  ul {
-    list-style: none;
-    padding: 0;
+header {
+  nav {
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+  a {
+    position: relative;
+    &::after {
+      content: "";
+      position: relative;
+      display: block;
+      width: 0;
+      height: 2px;
+      transform: translateX(-50%) translateY(-50%);
+      left: 50%;
+      bottom: rem(-1px);
+      background: $primary500;
+      transition: width 0.3s;
+    }
+    &:hover::after {
+      width: 100%;
+    }
+  }
+  img {
+    margin-right: rem(25px);
+    height: rem(60px);
+  }
+}
+
+$lineHeight: 3px;
+$bugerWidth: 30px;
+.burger-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: calc($lineHeight * 2);
+  position: relative;
+  width: $bugerWidth;
+  &__line {
+    width: 100%;
+    height: $lineHeight;
+    background: black;
+    transition: 0.2s;
+  }
+  transition: 0.2s;
+  &-active {
+    transform: translateX(2px);
+    .burger-menu__line {
+      &:nth-child(1) {
+        transform: rotate(-45deg) translateY($lineHeight * 2);
+      }
+      &:nth-child(2) {
+        transform: rotate(45deg) translateY($lineHeight * -2);
+      }
+      &:nth-child(3) {
+        opacity: 0;
+      }
+    }
   }
 }

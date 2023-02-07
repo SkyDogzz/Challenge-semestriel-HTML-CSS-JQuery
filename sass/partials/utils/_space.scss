@@ -1,4 +1,4 @@
-$remSpace: rem(0px), rem(5px), rem(10px), rem(15px);
+$remSpace: rem(0px), rem(5px), rem(10px), rem(15px), rem(20px);
 $direction: top, right, bottom, left;
 
 @for $i from 1 through length($remSpace) {
@@ -33,5 +33,13 @@ $direction: top, right, bottom, left;
   .my-#{$n} {
     margin-top: nth($remSpace, $i);
     margin-bottom: nth($remSpace, $i);
+  }
+}
+
+$width: 10%, 20%, 30%, 40%, 50%, 60%, 70%, 80%, 90%, 100%;
+
+@for $i from 1 through length($width) {
+  .w-#{$i} {
+    width: nth($width, $i);
   }
 }

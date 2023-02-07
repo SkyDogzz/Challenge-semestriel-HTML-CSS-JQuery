@@ -1,0 +1,35 @@
+@media screen and (max-width: $lg) {
+  .lg-min {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .md-min {
+    display: none;
+  }
+}
+
+@media screen and (max-width: $sm) {
+  .sm-min {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .lg-max {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $md) {
+  .md-max {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $sm) {
+  .sm-max {
+    display: none;
+  }
+}

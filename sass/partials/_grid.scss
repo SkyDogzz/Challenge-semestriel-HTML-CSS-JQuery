@@ -15,13 +15,15 @@ $grid-gutter: rem(20px);
 
 @mixin col($i) {
   $w: calc($i * 100 / $grid-columns) * 1%;
-  width: $w;
+  flex: 0 0 $w;
   padding: calc($grid-gutter / 2);
   box-sizing: border-box;
 }
 
 .col {
-  width: auto;
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
   padding: calc($grid-gutter / 2);
   box-sizing: border-box;
 }
@@ -40,7 +42,8 @@ $grid-gutter: rem(20px);
   }
 
   .col-lg {
-    width: auto;
+    flex: 0 0 auto;
+
     padding: calc($grid-gutter / 2);
     box-sizing: border-box;
   }
@@ -53,7 +56,8 @@ $grid-gutter: rem(20px);
     }
   }
   .col-md {
-    width: auto;
+    flex: 0 0 auto;
+
     padding: calc($grid-gutter / 2);
     box-sizing: border-box;
   }
@@ -66,7 +70,7 @@ $grid-gutter: rem(20px);
     }
   }
   .col-sm {
-    width: auto;
+    flex: 0 0 auto;
     padding: calc($grid-gutter / 2);
     box-sizing: border-box;
   }

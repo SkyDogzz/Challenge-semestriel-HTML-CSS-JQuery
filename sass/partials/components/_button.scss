@@ -1,2 +1,32 @@
 .button {
+  display: inline-block;
+  margin: 0;
+  padding: rem(15px) rem(20px);
+  background: $neutral100;
+  color: $neutral0;
+  outline: 0;
+  font-size: rem(16px);
+  font-weight: 400;
+  cursor: pointer;
+  border-radius: rem($raduis);
+
+  &__icon {
+    display: flex;
+    align-items: center;
+    .icon {
+      margin-right: rem(30px);
+      width: rem(30px);
+    }
+  }
+
+  &:hover {
+    background: $neutral100;
+  }
+
+  &__primary {
+    background: $primary500;
+    &:hover {
+      background: $primary400;
+    }
+  }
 }
