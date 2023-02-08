@@ -31,7 +31,7 @@ $card-padding: rem(15px);
   }
 
   &__body {
-    height: 310px;
+    margin-bottom: $card-padding;
     & > * {
       margin: rem(15px) 0;
     }

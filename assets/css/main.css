@@ -318,6 +318,22 @@ h3 {
   font-weight: 500;
 }
 
+.title-underline {
+  display: inline-block;
+  position: relative;
+}
+.title-underline::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  bottom: 0.625rem;
+  display: block;
+  width: 2.5rem;
+  height: 0.625rem;
+  background-color: #e88011;
+  margin-top: 0.5rem;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
@@ -399,7 +415,7 @@ a {
   object-fit: cover;
 }
 .card__body {
-  height: 310px;
+  margin-bottom: 0.9375rem;
 }
 .card__body > * {
   margin: 0.9375rem 0;
@@ -439,10 +455,10 @@ a {
   list-style: none;
   padding: 0;
 }
-.header a {
+.header a:not(.button) {
   position: relative;
 }
-.header a::after {
+.header a:not(.button)::after {
   content: "";
   position: relative;
   display: block;
@@ -454,7 +470,7 @@ a {
   background: #e88011;
   transition: width 0.3s;
 }
-.header a:hover::after {
+.header a:not(.button):hover::after {
   width: 100%;
 }
 .header img {
