@@ -1,0 +1,18 @@
+$card-padding: rem(15px);
+.card {
+  @include boxes($card-padding, 1);
+  max-width: 360px;
+  &__thumbnail {
+    img {
+      width: 100%;
+      height: rem(200px);
+      object-fit: cover;
+    }
+    margin: 0 -1 * $card-padding;
+    margin-top: -1 * $card-padding;
+  }
+
+  h3 {
+    margin: 0;
+  }
+}

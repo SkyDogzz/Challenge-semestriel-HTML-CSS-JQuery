@@ -1,4 +1,11 @@
-header {
+.header {
+  &__gradient {
+    background: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0) 100%);
+    color: white;
+    img {
+      filter: invert(1);
+    }
+  }
   nav {
     ul {
       list-style: none;
@@ -25,7 +32,8 @@ header {
   }
   img {
     margin-right: rem(25px);
-    height: rem(60px);
+    height: rem(50px);
+    padding: rem(5px) 0;
   }
 }
 

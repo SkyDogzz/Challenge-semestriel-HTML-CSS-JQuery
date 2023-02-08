@@ -15,6 +15,11 @@ p {
   font-size: nth($fontsSizes, 1);
 }
 
+small {
+  font-family: $popins-font;
+  font-size: rem(12px);
+}
+
 @for $i from 1 through length($titlesSizes) {
   h#{$i} {
     font-family: $popins-font;

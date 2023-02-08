@@ -1,5 +1,9 @@
 body {
   font-family: $popins-font;
+  overflow-x: hidden;
+  & > * {
+    box-sizing: border-box;
+  }
 }
 a {
   color: currentColor;

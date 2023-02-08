@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/icons.js" defer></script>
     <title>Document</title>
   </head>
   <body>
-    <header class="row align-center justify-between p-4">
+    <header class="row align-center justify-between p-4 header">
       <div class="col row align-center">
         <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
         <nav class="col lg-min">
@@ -17,31 +18,66 @@
               <li>Accueil</li>
             </a>
             <a href="" class="px-3">
-              <li>Destinations Populaire</li>
+              <li>Destinations</li>
             </a>
             <a href="" class="px-3">
               <li>A propos</li>
             </a>
             <a href="" class="px-3">
-              <li>Avis</li>
-            </a>
-            <a href="" class="px-3">
-              <li>Partenaire</li>
+              <li>Contact</li>
             </a>
           </ul>
         </nav>
       </div>
       <div class="col-4 lg-min row justify-end align-center">
         <a>S'inscrire</a>
-        <a class="button button__primary m-left-4">Se connecter</a>
+        <a class="button button__primary m-left-6">Se connecter</a>
       </div>
       <div class="lg-max">
-        <div class="burger-menu">
+        <div class="burger-menu burger-menu-active">
           <div class="burger-menu__line"></div>
           <div class="burger-menu__line"></div>
           <div class="burger-menu__line"></div>
         </div>
       </div>
     </header>
+
+    <article class="card">
+      <header class="card__thumbnail">
+        <img src="/assets/img/image.png" alt="" />
+      </header>
+      <main class="card__body">
+        <h3>Empire State Building</h3>
+        <section class="rating py-3">
+          <span class="icon-star" width="20" height="20" fill="#E88011"></span>
+          <span class="icon-star" width="20" height="20" fill="#E88011"></span>
+          <span class="icon-star" width="20" height="20" fill="#E88011"></span>
+          <span class="icon-star" width="20" height="20" fill="#E88011"></span>
+          <span
+            class="icon-star"
+            width="20"
+            height="20"
+            fill="transparent"
+            stroke="#E88011"
+          ></span>
+        </section>
+        <section class="details row">
+          <div class="row align-center">
+            <span class="icon-calendar" width="20" height="20"></span>
+            <small>4 jours</small>
+          </div>
+
+          <div class="row align-center">
+            <span class="icon-location" width="20" height="20"></span>
+            <small>7 destinations</small>
+          </div>
+          <div class="row align-center">
+            <span class="icon-global" width="20" height="20"></span>
+            <small>New-York</small>
+          </div>
+        </section>
+      </main>
+      <footer class="card__footer"></footer>
+    </article>
   </body>
 </html>

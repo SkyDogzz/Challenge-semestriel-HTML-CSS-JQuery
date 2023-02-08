@@ -11,6 +11,10 @@ $grid-gutter: rem(20px);
   display: flex;
 
   margin: calc($grid-gutter / -2);
+
+  & > * {
+    padding: calc($grid-gutter / 2);
+  }
 }
 
 @mixin col($i) {
