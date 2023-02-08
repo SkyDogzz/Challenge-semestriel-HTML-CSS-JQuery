@@ -492,6 +492,23 @@ a {
   opacity: 0;
 }
 
+.input-container {
+  border: 1px solid #989898;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+.input-container .input {
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.input-container .input:focus {
+  outline: none;
+}
+
 .m-top-0 {
   margin-top: 0rem;
 }
