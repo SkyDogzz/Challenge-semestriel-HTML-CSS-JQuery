@@ -10,11 +10,11 @@ sliderAfter.href = '#slide-' + (actSlide + 1)
 sliderBefore.href = '#slide-' + (slideNbr)
 
 let restartAutoSwipe = function () {
-   /*  if (autoSwipe)
+    if (autoSwipe)
         clearInterval(autoSwipe)
     autoSwipe = setInterval(function () {
         sliderAfter.click()
-    }, 5000) */
+    }, 10000) 
 }
 restartAutoSwipe()
 
