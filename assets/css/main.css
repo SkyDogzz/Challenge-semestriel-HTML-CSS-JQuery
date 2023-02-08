@@ -381,6 +381,7 @@ a {
   background: #f38f1b;
 }
 
+<<<<<<< HEAD
 .card {
   border-radius: 0.4375rem;
   overflow: hidden;
@@ -447,16 +448,26 @@ a {
 .footer {
   display: flex;
   justify-content: flex-start;
+=======
+.footer {
+  display: flex;
+  justify-content: space-between;
+>>>>>>> 90bda1a (feat footer)
   align-items: center;
   padding: 0 3.125rem;
   width: 100%;
   background-color: #F6F6F6;
   color: black;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 90bda1a (feat footer)
 .footer img {
   width: 18.5rem;
   height: 6rem;
   margin: 0 1rem;
+<<<<<<< HEAD
   padding-right: 10vw;
 }
 .footer ul {
@@ -475,6 +486,11 @@ a {
   filter: invert(1);
 }
 .header nav ul {
+=======
+}
+
+header nav ul {
+>>>>>>> 90bda1a (feat footer)
   list-style: none;
   padding: 0;
 }
