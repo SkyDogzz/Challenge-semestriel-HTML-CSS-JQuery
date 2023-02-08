@@ -1,0 +1,19 @@
+.input-container{
+    border: 1px solid #989898;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    
+    .input{
+        border: none;
+        font-size: 16px;
+        font-weight: 400;
+        margin: 0;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+}
