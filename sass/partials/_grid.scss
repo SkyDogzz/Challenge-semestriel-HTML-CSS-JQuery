@@ -1,6 +1,7 @@
 $grid-columns: 12;
 $grid-margin: rem(50px);
 $grid-gutter: rem(20px);
+$gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
 
 .container {
   margin: 0 $grid-margin;
@@ -9,7 +10,7 @@ $grid-gutter: rem(20px);
 .row {
   overflow: hidden;
   display: flex;
-
+  flex-wrap: wrap;
   margin: calc($grid-gutter / -2);
 
   & > * {
@@ -17,10 +18,23 @@ $grid-gutter: rem(20px);
   }
 }
 
+@for $i from 1 through length($gird-gutters) {
+  $n: $i - 1;
+  .row-#{$n} {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(nth($gird-gutters, $i) / -2);
+    & > * {
+      padding: calc(nth($gird-gutters, $i) / 2);
+    }
+  }
+}
+
 @mixin col($i) {
   $w: calc($i * 100 / $grid-columns) * 1%;
   flex: 0 0 $w;
-  padding: calc($grid-gutter / 2);
+  //padding: calc($grid-gutter / 2);
   box-sizing: border-box;
 }
 

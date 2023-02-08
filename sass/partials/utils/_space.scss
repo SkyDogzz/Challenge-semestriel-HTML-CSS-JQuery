@@ -1,5 +1,5 @@
-$remSpace: rem(0px), rem(5px), rem(10px), rem(15px), rem(20px), rem(30px),
-  rem(40px);
+$remSpace: rem(0px), rem(4px), rem(8px), rem(12px), rem(16px), rem(24px),
+  rem(32px);
 $direction: top, right, bottom, left;
 
 @for $i from 1 through length($remSpace) {

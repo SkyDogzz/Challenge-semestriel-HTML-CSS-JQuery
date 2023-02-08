@@ -5,8 +5,8 @@
 @mixin boxes(
   $padding: rem(15px),
   $hasRaduis: 0,
-  $color: $neutral500,
-  $bgColor: $neutral0
+  $bgColor: $neutral0,
+  $color: $neutral500
 ) {
   @if $hasRaduis {
     border-radius: rem($raduis);

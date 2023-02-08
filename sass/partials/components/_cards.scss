@@ -1,18 +1,65 @@
 $card-padding: rem(15px);
 .card {
-  @include boxes($card-padding, 1);
-  max-width: 360px;
+  @include boxes($card-padding, 1, $neutral50);
+  max-width: rem(360px);
+  &__destination {
+    max-width: rem(280px);
+  }
+
   &__thumbnail {
     img {
       width: 100%;
-      height: rem(200px);
       object-fit: cover;
     }
+    overflow: hidden;
+    height: rem(200px);
     margin: 0 -1 * $card-padding;
     margin-top: -1 * $card-padding;
   }
 
+  &__full_image {
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    border-radius: $raduis;
+    overflow: hidden;
+    height: rem(330px);
+    margin: 0 -1 * $card-padding;
+    margin-top: -1 * $card-padding;
+  }
+
+  &__body {
+    height: 310px;
+    & > * {
+      margin: rem(15px) 0;
+    }
+  }
+  &__footer {
+    margin: 0 -$card-padding;
+    margin-top: 0;
+    & > * {
+      margin: rem(8px) 0;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    height: 45%;
+    overflow: hidden;
+  }
+
+  p {
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+    color: $primary500;
+  }
+
   h3 {
     margin: 0;
+    margin-top: rem(15px);
   }
 }
