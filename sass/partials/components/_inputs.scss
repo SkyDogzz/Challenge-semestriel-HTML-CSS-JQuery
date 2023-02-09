@@ -1,4 +1,8 @@
 $inputsBaseBorder: #989898;
+$inputsFocusedBorder: opacify(
+  $color: $primary500,
+  $amount: 0.8,
+);
 
 .input-container {
   border: 1px solid $inputsBaseBorder;
@@ -11,16 +15,17 @@ $inputsBaseBorder: #989898;
   overflow: hidden;
 
   &.active {
-    box-shadow: inset 0px 0px 0px 2px opacify($color: $primary500, $amount: 0.8);
-    border: 1px solid opacify($color: $primary500, $amount: 0.8);
+    box-shadow: inset 0px 0px 0px 2px $inputsFocusedBorder;
+    border: 1px solid $inputsFocusedBorder;
 
     .input {
-      color:  opacify($color: $primary500, $amount: 0.8);
+      color: $inputsFocusedBorder;
     }
 
     .input-double-separator {
-      box-shadow: 1px 0px 0px 0px  opacify($color: $primary500, $amount: 0.8), -1px 0px 0px 0px  opacify($color: $primary500, $amount: 0.8);
-      border-left: 1px solid  opacify($color: $primary500, $amount: 0.8);
+      box-shadow: 1px 0px 0px 0px opacify($color: $primary500, $amount: 0.8),
+        -1px 0px 0px 0px $inputsFocusedBorder;
+      border-left: 1px solid $inputsFocusedBorder;
     }
   }
 
