@@ -326,9 +326,9 @@ h3 {
   content: "";
   position: absolute;
   z-index: -1;
-  bottom: 0.625rem;
+  bottom: 0.4375rem;
   display: block;
-  width: 2.5rem;
+  width: 1.875rem;
   height: 0.625rem;
   background-color: #e88011;
   margin-top: 0.5rem;

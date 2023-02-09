@@ -36,9 +36,10 @@ small {
     content: "";
     position: absolute;
     z-index: -1;
-    bottom: rem(10px);
+
+    bottom: rem(7px);
     display: block;
-    width: rem(40px);
+    width: rem(30px);
     height: rem(10px);
     background-color: $primary500;
     margin-top: rem(8px);
