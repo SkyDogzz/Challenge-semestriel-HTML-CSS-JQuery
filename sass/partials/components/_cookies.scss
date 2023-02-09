@@ -1,0 +1,15 @@
+.cookie-modal {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+  
+    &-content {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
