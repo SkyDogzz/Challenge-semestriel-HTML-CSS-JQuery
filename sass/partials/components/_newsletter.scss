@@ -4,13 +4,14 @@
   position: relative;
   border-radius: $raduis;
   overflow: hidden;
+  margin: 0 rem(62px);
   &::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: 0;
     height: 100%;
-    width: $aside-width;
+    width: calc($aside-width * 1.2);
     background-image: url(/assets/img/image.png);
     background-size: cover;
     background-position: center;
