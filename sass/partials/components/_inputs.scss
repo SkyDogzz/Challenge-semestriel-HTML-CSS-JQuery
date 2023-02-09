@@ -10,8 +10,8 @@ $inputsFocusedBorder: opacify(
   display: flex;
   justify-content: left;
   padding: 15px 20px;
-  width: 381px;
-  box-sizing: content-box;
+  width: 100%;
+  box-sizing: border-box;
   overflow: hidden;
 
   &.active {
@@ -35,7 +35,8 @@ $inputsFocusedBorder: opacify(
     font-weight: 400;
     margin: 0;
     width: 100%;
-
+    resize: none;
+    font-family:$popins-font;
     &:focus {
       outline: none;
     }
