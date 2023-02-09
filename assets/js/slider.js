@@ -3,6 +3,9 @@ class Slider {
     this.container = el;
     this.slides = el.querySelectorAll(".slider-item");
 
+    //this.itemsVisible = Number(el.getAttribute("data-element-visible")) || 1;
+    this.autoLoop = Boolean(el.getAttribute("data-auto-loop"));
+
     this.posSlider = 0;
     this.isDrag = false;
     this.startClickPos = null;
@@ -11,6 +14,18 @@ class Slider {
     this.setup(); // create the wrapper
     this.handle(); // set up the event listener
     this.clear = this.loop(); // start the loop
+    console.log(this);
+  }
+
+  get itemsVisible() {
+    let avgSlideWidth = this.totalWidth / this.slides.length;
+    return this.container.offsetWidth / avgSlideWidth;
+  }
+  get totalWidth() {
+    return Array.from(this.slides).reduce(
+      (acc, slide) => acc + slide.offsetWidth,
+      0
+    );
   }
   /**
    * GETTERs
@@ -31,9 +46,10 @@ class Slider {
    * @returns {number} return the gap in percentage
    */
   get gap() {
-    if (!this.startClickPos && !this.clickPos) return 0;
+    if (!this.startClickPos || !this.clickPos) return 0;
     return (
-      ((this.startClickPos - this.clickPos) / this.container.offsetWidth) * -130
+      ((this.startClickPos - this.clickPos) / this.container.offsetWidth) *
+      (-130 * this.itemsVisible)
     );
   }
 
@@ -117,8 +133,9 @@ class Slider {
   setup() {
     this.swipeTrack = document.createElement("div");
     this.swipeTrack.classList.add("slider-swipe-track");
-    this.swipeTrack.style.width = `${this.slides.length * 100}vw`;
+    this.swipeTrack.style.width = `${this.totalWidth}px`;
     this.slides.forEach((slide) => {
+      //slide.style.minWidth = `${100 / this.itemsVisible}%`;
       this.swipeTrack.appendChild(slide);
     });
     this.container.appendChild(this.swipeTrack);
@@ -150,6 +167,7 @@ class Slider {
    * @returns {function} return a function to clear the interval
    */
   loop() {
+    if (!this.autoLoop) return () => {};
     let interval = setInterval(() => {
       let i = Math.abs(this.posSlider) + 1;
       if (i == this.slides.length) i = 0;
@@ -159,4 +177,5 @@ class Slider {
   }
 }
 
-new Slider(document.querySelector(".slider-container"));
+let sliders = document.querySelectorAll(".slider-container");
+sliders.forEach((slider) => new Slider(slider));

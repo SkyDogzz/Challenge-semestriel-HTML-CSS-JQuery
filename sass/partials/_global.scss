@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: $popins-font;
   overflow-x: hidden;
   & > * {
@@ -12,4 +13,24 @@ a {
 
 .rounded {
   border-radius: rem($raduis);
+}
+
+.banner {
+  height: 100vh;
+  .slider-item {
+    width: 100vw;
+  }
+  .bg-1 {
+    background-image: url(/assets/img/banner/Rome.jpg);
+    background-size: cover;
+  }
+  .bg-2 {
+    background-image: url(/assets/img/banner/New-York.jpg);
+    background-size: cover;
+  }
+  .bg-3 {
+    background-size: cover;
+
+    background-image: url(/assets/img/banner/Paris.jpg);
+  }
 }
