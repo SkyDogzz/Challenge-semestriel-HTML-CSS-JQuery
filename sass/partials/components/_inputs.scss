@@ -1,5 +1,7 @@
+$inputsBaseBorder: #989898;
+
 .input-container {
-  border: 1px solid #989898;
+  border: 1px solid $inputsBaseBorder;
   border-radius: 7px;
   display: flex;
   justify-content: left;
@@ -9,16 +11,16 @@
   overflow: hidden;
 
   &.active {
-    box-shadow: inset 0px 0px 0px 2px #e88011cc;
-    border: 1px solid #e88011;
+    box-shadow: inset 0px 0px 0px 2px opacify($color: $primary500, $amount: 0.8);
+    border: 1px solid opacify($color: $primary500, $amount: 0.8);
 
     .input {
-      color: #e88011;
+      color:  opacify($color: $primary500, $amount: 0.8);
     }
 
     .input-double-separator {
-      box-shadow: 1px 0px 0px 0px #e88011cc, -1px 0px 0px 0px #e88011cc;
-      border-left: 1px solid #e88011cc;
+      box-shadow: 1px 0px 0px 0px  opacify($color: $primary500, $amount: 0.8), -1px 0px 0px 0px  opacify($color: $primary500, $amount: 0.8);
+      border-left: 1px solid  opacify($color: $primary500, $amount: 0.8);
     }
   }
 
@@ -36,7 +38,7 @@
 
   .input-double-separator {
     width: 0px;
-    border-left: 1px solid #989898;
+    border-left: 1px solid $inputsBaseBorder;
     height: 70px;
     margin: -25px 0;
     padding-right: 20px;
