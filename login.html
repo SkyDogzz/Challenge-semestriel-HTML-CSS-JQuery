@@ -7,13 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/assets/css/main.css" />
   <script src="/assets/js/icons.js" defer></script>
+  <script src="/assets/js/inputs.js" defer></script>
   <title>FarAway</title>
 </head>
 
 <body>
     <header class="row align-center justify-between p-4 header">
       <div class="col row align-center">
-        <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+        <a href="index.html">
+          <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+        </a>
         <nav class="col lg-min">
           <ul class="row">
             <a href="" class="px-3">
@@ -46,18 +49,36 @@
 
    
     <section class="login-container justify-content align-center row">
-       <!-- Left  -->
+       <!-- Left Part -->
       <div class=" col-6">
         <h1 class="text-center whitespace">Connectez-vous à 
           votre compte</h1>
         <hr>
+        
+        <!-- Form -->
+
+        <!-- EMAIL -->
+        <div class="input-container">
+          <div class="icon-mail icon-left" width="19.5" height="21"></div>
+          <input class="input" type="text" placeholder="Email" />
+        </div>
+
+        <!-- PASSWORD -->
+        <div class="input-container">
+          <div class="icon-lock icon-left" width="19.5" height="21"></div>
+          <input class="input" type="password" placeholder="Mot de passe" />
+          <div class="icon-eye-off icon-right" width="19.5" height="21"></div>
+        </div>
+        <a href="" class="text-neutral100 underline">Mot de passe oublié ?</a>
+        
         <a href="" class="button button__primary">SE CONNECTER</a>
+        <!-- <a href="" class="button button__primary">SE CONNECTER</a> -->
       </div>
 
-      <!-- Right -->
+      <!-- Right Part -->
       <div class="register-background col-6">
-        <h1 class="text-center">Nouveau ici ?</h1>
-        <p class="text-center">Inscrivez-vous maintenant et voyagez en toute tranquilité.</p>
+        <h1 class="text-center text-neutral0">Nouveau ici ?</h1>
+        <p class="text-center text-neutral0 bold">Inscrivez-vous maintenant et voyagez en toute tranquilité.</p>
           <a href="" class="button button__primary">S'INSCRIRE</a>
       </div>
     </section>  

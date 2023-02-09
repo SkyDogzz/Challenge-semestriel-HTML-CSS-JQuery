@@ -1,4 +1,4 @@
-$colors: (#e88011, #f38f1b, #ffb43d, #ffc059, #eeeeee, #fff, #000);
+$colors: (#e88011, #f38f1b, #ffb43d, #ffc059, #eeeeee,#fff, #000, #989898);
 $colorsNames: (
   primary500,
   primary400,
@@ -6,7 +6,8 @@ $colorsNames: (
   primary200,
   natural100,
   neutral0,
-  neutral500
+  neutral500,
+  neutral100,
 );
 
 @for $i from 1 through length($colors) {
