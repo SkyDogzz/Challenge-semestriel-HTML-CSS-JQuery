@@ -13,3 +13,13 @@ a {
 .rounded {
   border-radius: rem($raduis);
 }
+
+.login-container {
+  height: calc(100vh - 92px);
+}
+
+.register-background {
+  height: 100%;
+  background: rgb(220,130,0);
+  background: linear-gradient(90deg, rgba(220,130,0,1) 0%, rgba(223,115,0,1) 100%);
+}
