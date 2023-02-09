@@ -23,8 +23,7 @@ $inputsFocusedBorder: opacify(
     }
 
     .input-double-separator {
-      box-shadow: 1px 0px 0px 0px $inputsFocusedBorder,
-        -1px 0px 0px 0px $inputsFocusedBorder;
+      box-shadow: -2px 0px 0px 0px $inputsFocusedBorder;
       border-left: 1px solid $inputsFocusedBorder;
     }
   }
