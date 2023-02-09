@@ -2,10 +2,10 @@ $card-padding: rem(15px);
 .card {
   @include boxes($card-padding, 1, $neutral50);
   max-width: rem(360px);
+  margin: 0 rem(10px);
+  box-sizing: border-box;
   &__destination {
     width: rem(280px);
-    box-sizing: border-box;
-    margin: 0 rem(10px);
   }
 
   &__thumbnail {
@@ -14,7 +14,7 @@ $card-padding: rem(15px);
       object-fit: cover;
     }
     overflow: hidden;
-    height: rem(200px);
+    height: rem(356px);
     margin: 0 -1 * $card-padding;
     margin-top: -1 * $card-padding;
   }

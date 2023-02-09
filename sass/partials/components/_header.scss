@@ -1,8 +1,19 @@
 .header {
+  padding: rem(24px) rem(50px);
   &__gradient {
-    background: linear-gradient(180deg, #000 0%, rgba(255, 255, 255, 0) 100%);
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      180deg,
+      #000000b0 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
     color: white;
-    img {
+    img,
+    .burger-menu {
       filter: invert(1);
     }
   }
