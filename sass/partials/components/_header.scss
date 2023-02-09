@@ -12,7 +12,8 @@
       padding: 0;
     }
   }
-  a {
+
+  a:not(.button) {
     position: relative;
     &::after {
       content: "";

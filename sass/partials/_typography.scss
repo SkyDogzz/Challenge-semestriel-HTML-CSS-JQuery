@@ -27,3 +27,21 @@ small {
     font-weight: nth($titleWheight, $i);
   }
 }
+
+.title-underline {
+  display: inline-block;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+
+    bottom: rem(7px);
+    display: block;
+    width: rem(30px);
+    height: rem(10px);
+    background-color: $primary500;
+    margin-top: rem(8px);
+  }
+}

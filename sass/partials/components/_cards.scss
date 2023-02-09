@@ -31,13 +31,13 @@ $card-padding: rem(15px);
   }
 
   &__body {
-    height: 310px;
+    margin-bottom: $card-padding;
     & > * {
       margin: rem(15px) 0;
     }
   }
   &__footer {
-    margin: 0 -$card-padding;
+    margin: 0 calc($card-padding * -1);
     margin-top: 0;
     & > * {
       margin: rem(8px) 0;
