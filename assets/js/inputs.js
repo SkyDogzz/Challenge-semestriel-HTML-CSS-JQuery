@@ -50,9 +50,13 @@ inputContainers.forEach(inputContainer => {
             });
 
             inputContainer.addEventListener('click', (event) => {
-                inputContainer.classList.add('active');
                 if (event.offsetX < inputContainer.offsetWidth / 2) {
-                    inputContainer.querySelector('input').focus();
+                    if (event.target.classList.contains('input-right')) {
+                        inputContainer.querySelector('input:last-child').focus();
+                    }
+                    else {
+                        inputContainer.querySelector('input').focus();
+                    }
                 }
                 else {
                     inputContainer.querySelector('input:last-child').focus();
