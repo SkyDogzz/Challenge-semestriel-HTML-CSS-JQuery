@@ -30,6 +30,8 @@ $inputsFocusedBorder: opacify(
     font-weight: 400;
     margin: 0;
     width: 100%;
+    resize: none;
+    font-family:$popins-font;
     &:focus {
       outline: none;
     }
