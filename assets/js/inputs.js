@@ -87,8 +87,6 @@ inputContainers.forEach(inputContainer => {
 inputsPassword.forEach(inputPassword => {
     let inputContainer = inputPassword.closest('.input-container');
     let icon = inputContainer.querySelector('.icon-eye-off');
-    console.log(inputPassword)
-    console.log(inputContainer);
     icon.addEventListener('click', () => {
         if (inputPassword.type === 'password') {
             inputPassword.type = 'text';
