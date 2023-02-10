@@ -109,3 +109,9 @@ a {
     background-image: url(/assets/img/banner/Paris.jpg);
   }
 }
+
+.main-home {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40px);
+}
