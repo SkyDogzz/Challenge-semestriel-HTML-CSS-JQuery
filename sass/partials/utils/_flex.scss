@@ -15,10 +15,16 @@ $justyfy-content-name: (start, end, center, between, around, evenly);
   .align-#{nth($align-items-name, $i)} {
     align-items: nth($align-items, $i);
   }
+  .align-self-#{nth($align-items-name, $i)} {
+    align-self: nth($align-items, $i) !important;
+  }
 }
 
 @for $i from 1 through length($justify-content) {
   .justify-#{nth($justyfy-content-name, $i)} {
     justify-content: nth($justify-content, $i);
+  }
+  .justify-self-#{nth($justyfy-content-name, $i)} {
+    justify-self: nth($justify-content, $i);
   }
 }
