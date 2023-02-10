@@ -93,3 +93,9 @@ $gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
     box-sizing: border-box;
   }
 }
+
+@media screen and (max-width: $md) {
+  .container {
+    margin: 0 calc($grid-margin / 2);
+  }
+}

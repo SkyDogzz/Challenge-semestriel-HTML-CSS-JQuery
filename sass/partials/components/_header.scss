@@ -84,6 +84,16 @@ $bugerWidth: 30px;
 }
 
 @media screen and (max-width: $lg) {
+  .header__gradient {
+    position: absolute !important;
+    color: $neutral500 !important;
+    &.header-active {
+      img,
+      .burger-menu {
+        filter: invert(0);
+      }
+    }
+  }
   .header {
     .break-line {
       position: relative;

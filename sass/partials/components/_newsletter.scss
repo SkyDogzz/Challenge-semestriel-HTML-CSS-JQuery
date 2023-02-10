@@ -35,6 +35,7 @@
 @media screen and (max-width: $md) {
   .newsletter {
     padding-left: 0;
+    margin: 0 rem(31px);
     &::before {
       display: none;
     }

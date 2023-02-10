@@ -9,13 +9,14 @@
     <script src="/assets/js/icons.js" defer></script>
     <script src="/assets/js/inputs.js" defer></script>
     <script src="/assets/js/slider.js" defer></script>
+
+    <script src="/assets/js/burger.js" type="module" defer></script>
   </head>
   <body>
-    <!-- HEADER -->
     <header class="row align-center justify-between header header__gradient">
-      <div class="col row align-center">
-        <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
-        <nav class="col lg-min">
+      <div class="col-6 row align-center">
+        <img class="col-2" src="/assets/svg/FarawayLogo.svg" alt="logo" />
+        <nav class="col">
           <ul class="row">
             <a href="" class="px-3">
               <li>Accueil</li>
@@ -29,6 +30,11 @@
             <a href="" class="px-3">
               <li>Contact</li>
             </a>
+            <div class="break-line"></div>
+            <a href="" class="px-3 lg-max"><li>S'inscrire</li></a>
+            <a class="button button__primary px-3 lg-max"
+              ><li>Se connecter</li></a
+            >
           </ul>
         </nav>
       </div>
@@ -36,7 +42,7 @@
         <a>S'inscrire</a>
         <a class="button button__primary m-left-6">Se connecter</a>
       </div>
-      <div class="lg-max">
+      <div class="lg-max col-1">
         <div class="burger-menu">
           <div class="burger-menu__line"></div>
           <div class="burger-menu__line"></div>
@@ -44,7 +50,6 @@
         </div>
       </div>
     </header>
-    <!-- END HEADER -->
     <!-- MAIN CONTENT -->
     <main class="m-bottom-6">
       <!-- BANNER SLIDER SECTION  -->
@@ -354,34 +359,33 @@
 
       <!-- NEWSLETTER -->
       <aside class="container">
-        
-      
-      <section class="newsletter">
-        <main class="newsletter__body">
-          <h1 class="title-underline">Souscrivez à notre Newsletter !</h1>
-          <p>
-            Rejoignez notre communauté de voyageurs passionnés ! Souscrivez à
-            notre newsletter pour recevoir les dernières nouvelles sur les
-            destinations les plus populaires, les conseils de voyage utiles et
-            les offres spéciales exclusives.
-          </p>
-          <div class="row">
-            <div class="col">
-              <div class="input-container">
-                <input class="input" type="text" placeholder="Votre email" />
+        <section class="newsletter">
+          <main class="newsletter__body">
+            <h1 class="title-underline">Souscrivez à notre Newsletter !</h1>
+            <p>
+              Rejoignez notre communauté de voyageurs passionnés ! Souscrivez à
+              notre newsletter pour recevoir les dernières nouvelles sur les
+              destinations les plus populaires, les conseils de voyage utiles et
+              les offres spéciales exclusives.
+            </p>
+            <div class="row">
+              <div class="col">
+                <div class="input-container">
+                  <input class="input" type="text" placeholder="Votre email" />
+                </div>
+              </div>
+              <div>
+                <div class="icon-icon"></div>
+                <a class="button button__primary button__icon">
+                  <div class="icon-send icon"></div>
+                  S'inscrire
+                </a>
               </div>
             </div>
-            <div>
-              <div class="icon-icon"></div>
-              <a class="button button__primary button__icon">
-                <div class="icon-send icon"></div>
-                S'inscrire
-              </a>
-            </div>
-          </div>
-        </main>
-      </section>
-    </div>
+          </main>
+        </section>
+      </aside>
+
       <!-- END -->
     </main>
     <!-- FOOTER -->
