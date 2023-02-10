@@ -11,8 +11,83 @@ a {
   text-decoration: none;
 }
 
+.full-height {
+  height: calc(100vh - 101px);
+}
+
 .rounded {
   border-radius: rem($raduis);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.login-container {
+  // &-left {
+  // }
+
+  &-right {
+    & > * {
+      margin: 0 auto;
+      max-width: 430px;
+    }
+    padding: 0 7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(24px);
+    height: calc(100vh - 92px);
+    background: rgb(220, 130, 0);
+    background: linear-gradient(
+      90deg,
+      rgba(220, 130, 0, 1) 0%,
+      rgba(223, 115, 0, 1) 100%
+    );
+  }
+  &-left {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: rem(24px);
+    padding: 0 7%;
+  }
+}
+
+.forgot-container {
+  height: auto;
+  width: 40%;
+  min-width: rem(350px);
+
+  margin: 0 auto;
+  padding: rem(30px);
+  & > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: rem(30px);
+  }
+}
+
+.register-background {
+  height: 100%;
+  background: rgb(220, 130, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(220, 130, 0, 1) 0%,
+    rgba(223, 115, 0, 1) 100%
+  );
+}
+
+.separator {
+  width: rem(100px);
+  height: 3px;
+  background-color: $neutral500;
+  border-radius: rem(7px);
+  border: none;
 }
 
 .banner {

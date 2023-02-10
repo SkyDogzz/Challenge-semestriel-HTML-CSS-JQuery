@@ -21,6 +21,10 @@ small {
   font-size: rem(12px);
 }
 
+.bold {
+  font-weight: 700;
+}
+
 @for $i from 1 through length($titlesSizes) {
   h#{$i} {
     margin: 0;
@@ -46,5 +50,13 @@ small {
     height: rem(10px);
     background-color: $primary500;
     margin-top: rem(8px);
+  }
+}
+
+$alignments : (left, center, right); 
+
+@for $i from 1 through length($alignments) {
+  .text-#{nth($alignments, $i)} {
+    text-align: nth($alignments, $i);
   }
 }

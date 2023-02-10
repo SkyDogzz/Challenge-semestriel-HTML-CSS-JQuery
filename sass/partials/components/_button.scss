@@ -30,4 +30,12 @@
       background: $primary400;
     }
   }
+
+  &__secondary {
+    background: $neutral0;
+    color: $neutral500;
+    &:hover {
+      background: $neutral100;
+    }
+  }
 }
