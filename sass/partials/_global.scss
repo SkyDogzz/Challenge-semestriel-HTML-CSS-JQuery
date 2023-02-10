@@ -27,3 +27,11 @@ a {
   background: rgb(220,130,0);
   background: linear-gradient(90deg, rgba(220,130,0,1) 0%, rgba(223,115,0,1) 100%);
 }
+
+.separator {
+  width: rem(100px);
+  height: 3px;
+  background-color: $neutral500;
+  border-radius: rem(7px);
+}
+

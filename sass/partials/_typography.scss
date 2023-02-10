@@ -24,7 +24,6 @@ small {
   font-weight: 700;
 }
 
-
 @for $i from 1 through length($titlesSizes) {
   h#{$i} {
     font-family: $popins-font;
