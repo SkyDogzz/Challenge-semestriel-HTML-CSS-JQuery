@@ -1,93 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/icons.js" defer></script>
+    <script src="/assets/js/inputs.js" defer></script>
+    <title>FarAway</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <script src="/assets/js/icons.js" defer></script>
-  <script src="/assets/js/inputs.js" defer></script>
-  <title>FarAway</title>
-</head>
-
-<body>
-
-  <!-- Navbar -->
-  <header class="row align-center justify-between p-4 header">
-    <div class="col row align-center">
-      <a href="index.html">
-        <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
-      </a>
-      <nav class="col lg-min">
-        <ul class="row">
-          <a href="" class="px-3">
-            <li>Accueil</li>
-          </a>
-          <a href="" class="px-3">
-            <li>Destinations</li>
-          </a>
-          <a href="" class="px-3">
-            <li>A propos</li>
-          </a>
-          <a href="" class="px-3">
-            <li>Contact</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-4 lg-min row justify-end align-center">
-      <a>S'inscrire</a>
-      <a class="button button__primary m-left-6">Se connecter</a>
-    </div>
-    <div class="lg-max">
-      <div class="burger-menu burger-menu-active">
-        <div class="burger-menu__line"></div>
-        <div class="burger-menu__line"></div>
-        <div class="burger-menu__line"></div>
+  <body>
+    <!-- Navbar -->
+    <header class="row align-center justify-between p-4 header">
+      <div class="col row align-center">
+        <a href="index.html">
+          <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+        </a>
+        <nav class="col lg-min">
+          <ul class="row">
+            <a href="" class="px-3">
+              <li>Accueil</li>
+            </a>
+            <a href="" class="px-3">
+              <li>Destinations</li>
+            </a>
+            <a href="" class="px-3">
+              <li>A propos</li>
+            </a>
+            <a href="" class="px-3">
+              <li>Contact</li>
+            </a>
+          </ul>
+        </nav>
       </div>
-    </div>
-  </header>
-
-  <section class="login-container-left justify-content align-center row">
-    <!-- Left Part -->
-    <div class=" col-6">
-      <h1 class="text-center whitespace">Connectez-vous à
-        votre compte</h1>
-
-      <hr class="separator">
-
-      <!-- Form -->
-      <div class="form">
-
-        <!-- Email -->
-        <div class="input-container">
-          <div class="icon-mail icon-left" width="19.5" height="21"></div>
-          <input class="input" type="text" placeholder="Email" />
-        </div>
-
-        <!-- Password -->
-        <div class="input-container">
-          <div class="icon-lock icon-left" width="19.5" height="21"></div>
-          <input class="input" type="password" placeholder="Mot de passe " />
-          <div class="icon-eye-off icon-right" width="19.5" height="21"></div>
-        </div>
-        
-        <p class="text-right">
-          <a href="forgotPassword.html" class="text-neutral100 underline bold">Mot de passe oublié ?</a>
-        </p>
-          <a class="button button__primary bold">SE CONNECTER</a>
+      <div class="col-4 lg-min row justify-end align-center">
+        <a>S'inscrire</a>
+        <a class="button button__primary m-left-6">Se connecter</a>
       </div>
-    </div>
-    
+      <div class="lg-max">
+        <div class="burger-menu burger-menu-active">
+          <div class="burger-menu__line"></div>
+          <div class="burger-menu__line"></div>
+          <div class="burger-menu__line"></div>
+        </div>
+      </div>
+    </header>
+
+    <section class="justify-content align-center row full-height">
+      <!-- Left Part -->
+      <div class="col-6 col-md-12 login-container-left">
+        <h1 class="text-center whitespace">Connectez-vous à votre compte</h1>
+
+        <hr class="separator" />
+
+        <!-- Form -->
+        <div class="form">
+          <!-- Email -->
+          <div class="input-container">
+            <div class="icon-mail icon-left" width="19.5" height="21"></div>
+            <input class="input" type="text" placeholder="Email" />
+          </div>
+
+          <!-- Password -->
+          <div class="input-container">
+            <div class="icon-lock icon-left" width="19.5" height="21"></div>
+            <input class="input" type="password" placeholder="Mot de passe " />
+            <div class="icon-eye-off icon-right" width="19.5" height="21"></div>
+          </div>
+
+          <p class="text-right">
+            <a href="forgotPassword.html" class="text-neutral100 underline"
+              >Mot de passe oublié ?</a
+            >
+          </p>
+          <a class="button button__primary bold align-self-center"
+            >SE CONNECTER</a
+          >
+        </div>
+      </div>
+
       <!-- Right Part -->
-      <div class="login-container-right justify-content align-center col-6">
+      <div class="login-container-right col-6 md-min">
         <h1 class="text-center text-neutral0">Nouveau ici ?</h1>
-        <p class="text-center text-neutral0 bold">Inscrivez-vous maintenant et voyagez en toute tranquilité.</p>
+        <h2 class="text-center text-neutral0">
+          Inscrivez-vous maintenant et voyagez en toute tranquilité.
+        </h2>
         <a href="register.html" class="button button__secondary">S'INSCRIRE</a>
       </div>
-  </section>
-
-</body>
-
+    </section>
+  </body>
 </html>
