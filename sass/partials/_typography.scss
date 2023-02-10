@@ -48,3 +48,11 @@ small {
     margin-top: rem(8px);
   }
 }
+
+$alignments : (left, center, right); 
+
+@for $i from 1 through length($alignments) {
+  .text-#{nth($alignments, $i)} {
+    text-align: nth($alignments, $i);
+  }
+}
