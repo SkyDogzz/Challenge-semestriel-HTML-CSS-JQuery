@@ -175,7 +175,14 @@ class Slider {
     }, 5000);
     return () => clearInterval(interval);
   }
+  static init() {
+    let sliders = document.querySelectorAll(".slider-container");
+    sliders.forEach((slider) => new Slider(slider));
+  }
 }
 
-let sliders = document.querySelectorAll(".slider-container");
-sliders.forEach((slider) => new Slider(slider));
+const initSliders = () => {
+  Slider.init();
+};
+
+export default initSliders;

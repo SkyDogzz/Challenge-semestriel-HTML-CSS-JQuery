@@ -1,101 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/main.js" defer type="module"></script>
+    <title>FarAway</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="/assets/css/main.css" />
-  <script src="/assets/js/icons.js" defer></script>
-  <script src="/assets/js/inputs.js" defer></script>
-  <title>FarAway</title>
-</head>
-
-<body>
-  <header class="row align-center justify-between p-4 header">
-    <div class="col row align-center">
-      <a href="index.html">
-        <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
-      </a>
-      <nav class="col lg-min">
-        <ul class="row">
-          <a href="" class="px-3">
-            <li>Accueil</li>
-          </a>
-          <a href="" class="px-3">
-            <li>Destinations</li>
-          </a>
-          <a href="" class="px-3">
-            <li>A propos</li>
-          </a>
-          <a href="" class="px-3">
-            <li>Contact</li>
-          </a>
-        </ul>
-      </nav>
-    </div>
-    <div class="col-4 lg-min row justify-end align-center">
-      <a>S'inscrire</a>
-      <a href="login.html" button button__primary m-left-6">Se connecter</a>
-    </div>
-    <div class="lg-max">
-      <div class="burger-menu burger-menu-active">
-        <div class="burger-menu__line"></div>
-        <div class="burger-menu__line"></div>
-        <div class="burger-menu__line"></div>
-      </div>
-    </div>
-  </header>
-
-  <section class="justify-content align-center row full-height">
-
-    <!-- Left Part -->
-    <div class="register-background col-6 login-container-right md-min">
+  <body>
+    <header class="header"></header>
+    lo
+    <section class="justify-content align-center row full-height">
+      <!-- Left Part -->
+      <div class="register-background col-6 login-container-right md-min">
         <h1 class="text-center text-neutral0">Vous avez déjà un compte ?</h1>
-        <p class="text-center text-neutral0 bold">Connectez-vous et profitez de vos avantages clients</p>
-        <a href="login.html" class="button button__secondary  align-self-center">SE CONNECTER</a>
+        <p class="text-center text-neutral0 bold">
+          Connectez-vous et profitez de vos avantages clients
+        </p>
+        <a href="login.html" class="button button__secondary align-self-center"
+          >SE CONNECTER</a
+        >
       </div>
 
-    <!-- Right Part -->
-    <div class="login-container-left col-6 col-md-12">
-      <h1 class="text-center">Créer votre compte</h1>
+      <!-- Right Part -->
+      <div class="login-container-left col-6 col-md-12">
+        <h1 class="text-center">Créer votre compte</h1>
 
-      <hr class="separator">
+        <hr class="separator" />
 
-      <!-- Form -->
-      <div class="form">
+        <!-- Form -->
+        <div class="form">
+          <!-- Lastname -->
+          <div class="input-container">
+            <div class="icon-person icon-left" width="19.5" height="21"></div>
+            <input class="input" type="text" placeholder="Nom" />
+          </div>
 
-        <!-- Lastname -->
-        <div class="input-container">
-          <div class="icon-person icon-left" width="19.5" height="21"></div>
-          <input class="input" type="text" placeholder="Nom" />
+          <!-- Firstname -->
+          <div class="input-container">
+            <div class="icon-person icon-left" width="19.5" height="21"></div>
+            <input class="input" type="text" placeholder="Prénom" />
+          </div>
+
+          <!-- Email -->
+          <div class="input-container">
+            <div class="icon-mail icon-left" width="19.5" height="21"></div>
+            <input class="input" type="text" placeholder="Email" />
+          </div>
+
+          <!-- Password -->
+          <div class="input-container">
+            <div class="icon-lock icon-left" width="19.5" height="21"></div>
+            <input class="input" type="password" placeholder="Mot de passe " />
+            <div class="icon-eye-off icon-right" width="19.5" height="21"></div>
+          </div>
+
+          <a href="" class="button button__primary align-self-center"
+            >S'INSCRIRE</a
+          >
         </div>
-
-        <!-- Firstname -->
-        <div class="input-container">
-          <div class="icon-person icon-left" width="19.5" height="21"></div>
-          <input class="input" type="text" placeholder="Prénom" />
-        </div>
-        
-        <!-- Email -->
-        <div class="input-container">
-          <div class="icon-mail icon-left" width="19.5" height="21"></div>
-          <input class="input" type="text" placeholder="Email" />
-        </div>
-
-        <!-- Password -->
-        <div class="input-container">
-          <div class="icon-lock icon-left" width="19.5" height="21"></div>
-          <input class="input" type="password" placeholder="Mot de passe " />
-          <div class="icon-eye-off icon-right" width="19.5" height="21"></div>
-        </div>
-
-          <a href="" class="button button__primary  align-self-center">S'INSCRIRE</a>
       </div>
-    </div>
-
-  </section>
-
-</body>
-
+    </section>
+  </body>
 </html>
