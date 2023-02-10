@@ -4,8 +4,12 @@ $card-padding: rem(15px);
   max-width: rem(360px);
   margin: 0 rem(10px);
   box-sizing: border-box;
+  
   &__destination {
     width: rem(280px);
+    border-radius: $raduis;
+    overflow: hidden;
+    border: 3px solid rgba(255, 255, 255, 0.2); 
   }
 
   &__thumbnail {

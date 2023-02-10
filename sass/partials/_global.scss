@@ -72,6 +72,37 @@ a {
   }
 }
 
+
+
+.destination-detail-hero {
+
+  overflow: hidden  ;
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  & .destination-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 50vh;
+    left: 30%;
+    gap: rem(50px);
+    padding: 0 rem(50px);
+  }
+
+  & .fix-place {
+    padding-top: rem(380px);
+    display: block;
+  }
+}
+
+
+
 .register-background {
   height: 100%;
   background: rgb(220, 130, 0);
