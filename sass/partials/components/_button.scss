@@ -14,8 +14,9 @@
     display: flex;
     align-items: center;
     .icon {
-      margin-right: rem(30px);
+      margin-right: rem(10px);
       width: rem(30px);
+      height: rem(20px);
     }
   }
 
@@ -27,6 +28,14 @@
     background: $primary500;
     &:hover {
       background: $primary400;
+    }
+  }
+
+  &__secondary {
+    background: $neutral0;
+    color: $neutral500;
+    &:hover {
+      background: $neutral100;
     }
   }
 }

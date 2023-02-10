@@ -14,6 +14,8 @@ $inputsFocusedBorder: opacify(
   box-sizing: border-box;
   overflow: hidden;
 
+
+
   &.active {
     box-shadow: inset 0px 0px 0px 2px $inputsFocusedBorder;
     border: 1px solid $inputsFocusedBorder;
@@ -35,8 +37,9 @@ $inputsFocusedBorder: opacify(
     font-weight: 400;
     margin: 0;
     width: 100%;
-    resize: none;
-    font-family:$popins-font;
+    font-family: $popins-font;
+    background: transparent;
+
     &:focus {
       outline: none;
     }
@@ -57,4 +60,6 @@ $inputsFocusedBorder: opacify(
   .icon-right {
     margin-left: 10px;
   }
+
+
 }

@@ -11,6 +11,7 @@ $popins-font: "Poppins", sans-serif;
 }
 
 p {
+  margin: 0;
   font-family: $popins-font;
   font-size: nth($fontsSizes, 1);
 }
@@ -20,8 +21,13 @@ small {
   font-size: rem(12px);
 }
 
+.bold {
+  font-weight: 700;
+}
+
 @for $i from 1 through length($titlesSizes) {
   h#{$i} {
+    margin: 0;
     font-family: $popins-font;
     font-size: nth($titlesSizes, $i);
     font-weight: nth($titleWheight, $i);
@@ -36,12 +42,21 @@ small {
     content: "";
     position: absolute;
     z-index: -1;
-
+    left: rem(-5px);
     bottom: rem(7px);
+    left: -3%;
     display: block;
-    width: rem(30px);
+    width: rem(40px);
     height: rem(10px);
     background-color: $primary500;
     margin-top: rem(8px);
+  }
+}
+
+$alignments : (left, center, right); 
+
+@for $i from 1 through length($alignments) {
+  .text-#{nth($alignments, $i)} {
+    text-align: nth($alignments, $i);
   }
 }

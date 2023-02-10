@@ -1,0 +1,43 @@
+.newsletter {
+  $aside-width: 35%;
+  padding-left: $aside-width;
+  position: relative;
+  border-radius: $raduis;
+  overflow: hidden;
+  margin: 0 rem(62px);
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: calc($aside-width * 1.2);
+    background-image: url(/assets/img/newsletter.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .input-container {
+    background-color: $neutral0;
+  }
+  &__body {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: rem(40px);
+    padding: rem(60px) 8%;
+    background: $neutral100;
+  }
+}
+
+@media screen and (max-width: $md) {
+  .newsletter {
+    padding-left: 0;
+    margin: 0 rem(31px);
+    &::before {
+      display: none;
+    }
+  }
+}
