@@ -11,10 +11,10 @@ $gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  margin: calc($grid-gutter / -2);
+  margin: auto calc($grid-gutter / -2);
 
   & > * {
-    padding: calc($grid-gutter / 2);
+    padding: 0 calc($grid-gutter / 2);
   }
 }
 
@@ -24,9 +24,9 @@ $gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
-    margin: calc(nth($gird-gutters, $i) / -2);
+    margin: auto calc(nth($gird-gutters, $i) / -2);
     & > * {
-      padding: calc(nth($gird-gutters, $i) / 2);
+      padding: 0 calc(nth($gird-gutters, $i) / 2);
     }
   }
 }
@@ -62,7 +62,7 @@ $gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
   .col-lg {
     flex: 0 0 auto;
 
-    padding: calc($grid-gutter / 2);
+    padding: 0 calc($grid-gutter / 2);
     box-sizing: border-box;
   }
 }
@@ -76,7 +76,7 @@ $gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
   .col-md {
     flex: 0 0 auto;
 
-    padding: calc($grid-gutter / 2);
+    padding: 0 calc($grid-gutter / 2);
     box-sizing: border-box;
   }
 }
@@ -89,7 +89,7 @@ $gird-gutters: rem(0px), rem(8px), rem(12px), rem(16px);
   }
   .col-sm {
     flex: 0 0 auto;
-    padding: calc($grid-gutter / 2);
+    padding: 0 calc($grid-gutter / 2);
     box-sizing: border-box;
   }
 }
