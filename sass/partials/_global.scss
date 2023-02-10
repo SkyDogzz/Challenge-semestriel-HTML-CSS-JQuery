@@ -20,6 +20,22 @@ a {
 
 .login-container {
   height: calc(100vh - 92px);
+
+  // &-left {
+  // } 
+  
+  &-right {
+    height: calc(100vh - 92px);
+    background: rgb(220,130,0);
+    background: linear-gradient(90deg, rgba(220,130,0,1) 0%, rgba(223,115,0,1) 100%);
+  }
+}
+
+.forgot-container {
+  height: auto;
+  width: 40%;
+  margin: 0 auto;
+  padding: rem(30px);
 }
 
 .register-background {
