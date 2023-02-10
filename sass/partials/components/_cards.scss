@@ -3,7 +3,9 @@ $card-padding: rem(15px);
   @include boxes($card-padding, 1, $neutral50);
   max-width: rem(360px);
   &__destination {
-    max-width: rem(280px);
+    width: rem(280px);
+    box-sizing: border-box;
+    margin: 0 rem(10px);
   }
 
   &__thumbnail {
