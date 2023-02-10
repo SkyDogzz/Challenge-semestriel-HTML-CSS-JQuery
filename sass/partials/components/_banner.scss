@@ -1,0 +1,14 @@
+.banner {
+    width: 100%;
+    height: rem(270px);
+    background-color: #f6f6f6;
+}
+
+.banner__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+    padding: 0 rem(20px);
+}
