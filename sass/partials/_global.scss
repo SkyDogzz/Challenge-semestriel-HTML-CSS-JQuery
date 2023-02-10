@@ -1,4 +1,5 @@
 body {
+  margin: 0;
   font-family: $popins-font;
   overflow-x: hidden;
   & > * {
@@ -40,8 +41,12 @@ a {
 
 .register-background {
   height: 100%;
-  background: rgb(220,130,0);
-  background: linear-gradient(90deg, rgba(220,130,0,1) 0%, rgba(223,115,0,1) 100%);
+  background: rgb(220, 130, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(220, 130, 0, 1) 0%,
+    rgba(223, 115, 0, 1) 100%
+  );
 }
 
 .separator {
@@ -51,3 +56,22 @@ a {
   border-radius: rem(7px);
 }
 
+.banner {
+  height: 100vh;
+  .slider-item {
+    width: 100vw;
+  }
+  .bg-1 {
+    background-image: url(/assets/img/banner/Rome.jpg);
+    background-size: cover;
+  }
+  .bg-2 {
+    background-image: url(/assets/img/banner/New-York.jpg);
+    background-size: cover;
+  }
+  .bg-3 {
+    background-size: cover;
+
+    background-image: url(/assets/img/banner/Paris.jpg);
+  }
+}
