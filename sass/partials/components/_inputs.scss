@@ -37,8 +37,9 @@ $inputsFocusedBorder: opacify(
     font-weight: 400;
     margin: 0;
     width: 100%;
-    resize: none;
-    font-family:$popins-font;
+    font-family: $popins-font;
+    background: transparent;
+
     &:focus {
       outline: none;
     }
