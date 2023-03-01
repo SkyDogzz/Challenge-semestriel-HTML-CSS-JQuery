@@ -72,36 +72,79 @@ a {
   }
 }
 
-
-
 .destination-detail-hero {
+  overflow: hidden;
+  position: relative;
 
-  overflow: hidden  ;
-
-  img {
-    height: 100%;
+  & > div > div > img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: center;
   }
-
   & .destination-container {
+    $w: 70vw;
+    bottom: 12vh;
     display: flex;
-    flex-direction: row;
+    justify-content: flex-end;
     position: absolute;
-    height: 50vh;
-    left: 30%;
-    gap: rem(50px);
+    width: $w;
+
+    height: 45vh;
+    left: calc(100vw - $w);
+    gap: 2vw;
     padding: 0 rem(50px);
+    & img {
+      width: 100%;
+      height: 100%;
+      object-position: center;
+      object-fit: cover;
+    }
   }
 
   & .fix-place {
-    padding-top: rem(380px);
-    display: block;
+    position: absolute;
+    width: 50%;
+    bottom: 30px;
+  }
+
+  & .title-destination {
+    padding: rem(30px);
+  }
+  @media screen and (max-width: 768px) {
+    .right-side {
+      position: absolute;
+      background: white;
+      padding: 5vw;
+      width: 70vw;
+      height: 60vh;
+      bottom: 0;
+      right: 0;
+      gap: rem(20px);
+      left: auto;
+      display: flex;
+      flex-direction: column;
+
+      & .destination-container {
+        display: none;
+      }
+
+      & .slider-container {
+        flex: 0 1 100%;
+        & article {
+          width: var(--slider-container-width);
+        }
+      }
+
+      & .fix-place {
+        display: none;
+      }
+      & .title-destination {
+        padding: 0;
+        height: auto;
+      }
+    }
   }
 }
-
-
 
 .register-background {
   height: 100%;
