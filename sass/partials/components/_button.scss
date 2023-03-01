@@ -3,7 +3,7 @@
   margin: 0;
   padding: rem(15px) rem(20px);
   background: $neutral100;
-  color: $neutral0;
+
   outline: 0;
   font-size: rem(16px);
   font-weight: 400;
@@ -21,10 +21,11 @@
   }
 
   &:hover {
-    background: $neutral100;
+    background: $neutral50;
   }
 
   &__primary {
+    color: $neutral0;
     background: $primary500;
     &:hover {
       background: $primary400;
