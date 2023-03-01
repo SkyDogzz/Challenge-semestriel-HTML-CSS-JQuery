@@ -146,3 +146,13 @@ a {
   flex-direction: column;
   gap: rem(50px);
 }
+
+.main-destination {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/img/destinations/destination_contact.png);
+  background-size: 100% rem(459px);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  gap: rem(50px);
+}
