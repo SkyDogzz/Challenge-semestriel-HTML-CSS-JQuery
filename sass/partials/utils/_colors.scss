@@ -16,8 +16,12 @@ $colorsNames: (
   $colorName: nth($colorsNames, $i);
   .bg-#{$colorName} {
     background-color: $color;
+    position: relative;
+    z-index: 1;
   }
   .text-#{$colorName} {
     color: $color;
   }
+  
 }
+

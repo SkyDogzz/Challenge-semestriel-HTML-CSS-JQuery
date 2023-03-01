@@ -1,11 +1,12 @@
 .header {
   padding: rem(24px) rem(50px);
+  display: flex;
   &__gradient {
     position: absolute;
     z-index: 10;
     top: 0;
     left: 0;
-    right: 0;
+    width: 100vw;
     background: linear-gradient(
       180deg,
       #000000b0 0%,
@@ -17,8 +18,15 @@
       filter: invert(1);
     }
   }
+  &__left,
+  &__right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
   nav {
     ul {
+      display: flex;
       list-style: none;
       padding: 0;
     }

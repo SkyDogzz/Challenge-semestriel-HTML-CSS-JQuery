@@ -66,6 +66,9 @@ $arrow-width: rem(10px);
     background-color: $primary500;
     margin-top: rem(8px);
   }
+}
+
+.explorer-title {
 
   &::after {
     content : "";

@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: $popins-font;
   overflow-x: hidden;
-  & > * {
+  & * {
     box-sizing: border-box;
   }
 }
@@ -12,7 +12,7 @@ a {
 }
 
 .full-height {
-  height: calc(100vh - 82px);
+  height: calc(100vh - 106px);
 }
 
 .rounded {
@@ -144,5 +144,15 @@ a {
 .main-home {
   display: flex;
   flex-direction: column;
+  gap: rem(50px);
+}
+
+.main-destination {
+  display: flex;
+  flex-direction: column;
+  background-image: url(/assets/img/destinations/destination_contact.png);
+  background-size: 100% rem(459px);
+  background-position: bottom center;
+  background-repeat: no-repeat;
   gap: rem(50px);
 }
