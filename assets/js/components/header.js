@@ -3,7 +3,8 @@ import Components from "./components.js";
 class Header extends Components {
   constructor(el, afterRender) {
     super(el, "header", afterRender);
-    this.render();
+    if (!el.classList.contains("ignore")) this.render();
+    else this.afterRender();
   }
   render() {
     super.render(() => {

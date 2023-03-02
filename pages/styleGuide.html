@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <script src="/assets/js/main.js" type="module"></script>
+    <title>Style Guide - Far Away</title>
+  </head>
+  <body class="container" id="style-guide">
+    <header>
+      <h1>Style Guide FarAway</h1>
+    </header>
+    <main>
+      <section class="color-section">
+        <h2>Les couleurs</h2>
+        <p class="m-bottom-3">
+          Notre thème CSS met à disposition plusieurs classes pour faciliter
+          l'utilisation des couleurs. Pour les textes, il suffit d'ajouter la
+          classe <span class="code">text-{color}</span> et pour les backgrounds
+          <span class="code">bg-{color}</span>.
+        </p>
+        <div class="row justify-center">
+          <div class="color-block bg-primary500">
+            <span class="text-primary500">Primary-500</span>
+          </div>
+          <div class="color-block bg-primary400">
+            <span class="text-primary400">Primary-400</span>
+          </div>
+          <div class="color-block bg-primary300">
+            <span class="text-primary300">Primary-300</span>
+          </div>
+          <div class="color-block bg-primary200">
+            <span class="text-primary200">Primary-200</span>
+          </div>
+          <div class="color-block bg-primary100">
+            <span class="text-primary100">Primary-100</span>
+          </div>
+        </div>
+        <div class="row justify-center">
+          <div class="color-block bg-neutral500">
+            <span class="text-neutral500">Neutral-500</span>
+          </div>
+          <div class="color-block bg-neutral200">
+            <span class="text-neutral200">Neutral-200</span>
+          </div>
+          <div class="color-block bg-neutral100">
+            <span class="text-neutral100">Neutral-100</span>
+          </div>
+          <div class="color-block bordered bg-neutral0">
+            <span class="text-neutral0">Neutral-0</span>
+          </div>
+        </div>
+        <h4>Markup html</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="bg-primary500">
+    <span class="text-primary500">Primary-500</span>
+  </div>
+  <div class="bg-primary400">
+    <span class="text-primary400">Primary-400</span>
+  </div>
+  <div class="bg-primary300">
+    <span class="text-primary300">Primary-300</span>
+  </div>
+  <div class="bg-primary200">
+    <span class="text-primary200">Primary-200</span>
+  </div>
+  <div class="bg-primary100">
+    <span class="text-primary100">Primary-100</span>
+  </div>  
+  <div class="bg-neutral500">
+    <span class="text-neutral500">Neutral-500</span>
+  </div>
+  <div class="bg-neutral200">
+    <span class="text-neutral200">Neutral-200</span>
+  </div>
+  <div class="bg-neutral100">
+    <span class="text-neutral100">Neutral-100</span>
+  </div>
+  <div class="bg-neutral0">
+    <span class="text-neutral0">Neutral-0</span>
+  </div>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="typo-section">
+        <h2 class="m-bottom-5">Les Typographies</h2>
+        <div class="row">
+          <div class="col-6">
+            <h1>Titre 1</h1>
+            <h2>Titre 2</h2>
+          </div>
+          <div class="col-6">
+            <h2 class="title-underline">Titre 2 souligné</h2>
+            <h3>Titre 3</h3>
+          </div>
+        </div>
+        <p class="m-bottom-3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          numquam ipsum temporibus libero ad sed odio odit laudantium quod
+          beatae. Labore minus recusandae excepturi illo, dolorem dolores
+          nostrum. Assumenda, repellat?
+        </p>
+
+        <h4>Markup html</h4>
+        <pre>
+          <code>
+<xmp>
+  <h1>Titre 1</h1>
+  <h2>Titre 2</h2>
+  <h2 class="title-underline">Titre 2 souligné</h2>
+  <h3>Titre 3</h3>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+    numquam ipsum temporibus libero ad sed odio odit laudantium quod
+    beatae. Labore minus recusandae excepturi illo, dolorem dolores
+    nostrum. Assumenda, repellat?
+  </p>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="placement-section no-overflow">
+        <h2>La mise en page</h2>
+        <p>
+          Nous avons mis en place un système de grid au sein de notre thème CSS,
+          il existe aussi plusieurs classes afin de définir plus simplement la
+          mise en page des éléments HTML.
+        </p>
+        <h3>La grid</h3>
+        <p>
+          Notre grid est composé de 12 colonnes et prend en charge les colonnes
+          responsives grâce aux classes
+          <span class="code">col-{none | sm | md | lg}-{force}</span>.
+        </p>
+        <div class="row my-5">
+          <div class="col-3 bg-primary100">col-3</div>
+          <div class="col-4 bg-primary300">col-4</div>
+          <div class="col-2 col-md-7 bg-primary100">col-2 & col-md-7</div>
+          <div class="col-3 bg-primary300">col-3</div>
+        </div>
+
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="row">
+    <div class="col-3">
+      col-3
+    </div>
+    <div class="col-4">
+      col-4
+    </div>
+    <div class="col-2 col-md-7">
+      col-2 & col-md-7
+    </div>
+    <div class="col-3">
+      col-3
+    </div>
+  </div>
+</xmp>
+          </code>
+        </pre>
+        <h3>Les placements</h3>
+        <p>
+          Il existe plusieurs classes pour faciliter la mise en page des
+          éléments HTML au sein d'une <span class="code">row</span>. Vous y
+          retrouverez plusieurs classes correspondantes à la majorité des
+          propriétés de placement des flex-box :
+          <span class="code">justify-{value}</span>,
+          <span class="code">justify-self-{value}</span>,
+          <span class="code">align-{value}</span> et
+          <span class="code">align-self-{value}</span>.
+        </p>
+
+        <div class="row justify-center my-2">
+          <div class="col-3 bg-primary100">justify-center</div>
+        </div>
+        <div class="row justify-end my-2">
+          <div class="col-3 bg-primary100">justify-end</div>
+        </div>
+        <div class="row justify-start my-2">
+          <div class="col-3 bg-primary100">justify-start</div>
+        </div>
+        <div class="row justify-around my-2">
+          <div class="col-3 bg-primary100">justify-between</div>
+          <div class="col-3 bg-primary100">justify-between</div>
+        </div>
+
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="row justify-center">
+    <div class="col-3">
+      justify-center
+    </div>
+  </div>  
+  <div class="row justify-end">
+    <div class="col-3">
+      justify-end
+    </div>
+  </div>  
+  <div class="row justify-start">
+    <div class="col-3">
+      justify-start
+    </div>
+  </div>  
+  <div class="row justify-around">
+    <div class="col-3 bg-primary100">
+      justify-between
+    </div>
+    <div class="col-3 bg-primary100">
+      justify-between
+    </div>
+  </div>  
+</xmp>
+          </code>
+        </pre>
+
+        <h3>Les marges internes et externes</h3>
+        <p>
+          Nous avons mis en place des classes afin de gérer la marge interne et
+          externe des éléments plus simplement, à l'aide des classes CSS
+          <span class="code">m-{direction}-{force}</span> (prise en charge de
+          <span class="code">mx-{force}</span>,
+          <span class="code">my-{force}</span> et
+          <span class="code">m-{force}</span>) pour gérer la marge externe et
+          les classes <span class="code">p-{direction}-{force}</span> (prise en
+          charge de <span class="code">px-{force}</span>,
+          <span class="code">py-{force}</span> et
+          <span class="code">p-{force}</span>) pour spécifier la marge interne
+          d'un élément (veillez à bien être sur un élément display block).
+        </p>
+
+        <div class="row my-5">
+          <div class="col-2 m-right-2 bg-primary300">m-right-2</div>
+          <div class="col-2 mx-6 bg-primary100">mx-6</div>
+          <div class="col-2 m-2 bg-primary300">m-2</div>
+          <div class="col-2 p-5 bg-primary100">p-5</div>
+        </div>
+
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="row ">
+    <div class="col-2 m-right-2">m-right-2</div>
+    <div class="col-2 mx-6">mx-6</div>
+    <div class="col-2 m-2">m-2</div>
+    <div class="col-2 p-5">p-5</div>
+  </div>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="icons-container">
+        <h2>Les icônes</h2>
+        <p>
+          Notre thème CSS permet d'intégrer les icônes plus facilement à l'aide
+          de classes. Pour ajouter une icône, il suffit de placer une
+          <span class="code">div</span> avec la classe
+          <span class="code">icon-{icon_name}</span>. Avant d'intégrer une
+          icône, vous devez placer les SVG de vos icônes dans le dossier
+          <span class="code">/assets/icons</span> de votre site web.
+          <span class="code">icon_name</span>
+          correspond au nom du SVG présent dans le dossier. Vous pouvez ajouter
+          des attributs à la <span class="code">div</span> pour modifier la
+          couleur, les contours, ainsi que les dimensions.
+        </p>
+        <br />
+        <div class="icon-star" fill="#e88011" height="10"></div>
+        <div class="icon-star" stroke="#e88011" fill="white" height="20"></div>
+        <div class="icon-star" fill="#e88011" height="30"></div>
+        <div class="icon-star" stroke="#e88011" fill="white" height="40"></div>
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="icon-star" fill="#e88011" height="10"></div>
+  <div class="icon-star" stroke="#e88011" fill="white" height="20"></div>
+  <div class="icon-star" fill="#e88011" height="30"></div>
+  <div class="icon-star" stroke="#e88011" fill="white" height="40"></div>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="banner-section">
+        <h2>Le slider</h2>
+        <div class="slider-container" data-auto-loop="true">
+          <div class="slider-item">
+            <div class="slider-el bg-primary500"></div>
+            <h2>Slide 1</h2>
+          </div>
+          <div class="slider-item">
+            <div class="slider-el bg-primary200"></div>
+            <h2>Slide 2</h2>
+          </div>
+          <div class="slider-item">
+            <div class="slider-el bg-primary500"></div>
+            <h2>Slide 3</h2>
+          </div>
+          <div class="slider-item">
+            <div class="slider-el bg-primary200"></div>
+            <h2>Slide 4</h2>
+          </div>
+        </div>
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="slider-container" data-auto-loop="true">
+    <div class="slider-item">
+      <h2>Slide 1</h2>
+    </div>
+    <div class="slider-item">
+      <h2>Slide 2</h2>
+    </div>
+    <div class="slider-item">
+      <h2>Slide 3</h2>
+    </div>
+    <div class="slider-item">
+      <h2>Slide 4</h2>
+    </div>
+  </div>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="input-section">
+        <h2>Les inputs et boutons</h2>
+        <h3>Les boutons</h3>
+        <p>
+          Nous avons créé deux types de boutons : ceux sans icône et ceux avec,
+          ils utilisent notre système d'icône présenté précédemment.
+        </p>
+        <div class="row justify-center">
+          <div class="w-7">
+            <div class="row justify-between my-5">
+              <a href="" class="button button__primary">Primary</a>
+              <a href="" class="button button__secondary">Secondary</a>
+              <a href="" class="button">Default</a>
+            </div>
+            <div class="row justify-between my-5">
+              <a href="" class="button button__primary button__icon">
+                <div class="icon-send icon" fill="white"></div>
+                Primary
+              </a>
+              <a href="" class="button button__secondary button__icon">
+                <div class="icon-send icon" fill="black"></div>
+                Secondary
+              </a>
+              <a href="" class="button button__icon">
+                <div class="icon-send icon" fill="black"></div>
+                Default
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="row justify-between my-5">
+    <a href="" class="button button__primary">Primary</a>
+    <a href="" class="button button__secondary">Secondary</a>
+    <a href="" class="button">Default</a>
+  </div>
+
+  <div class="row justify-between my-5">
+    <a href="" class="button button__primary button__icon">
+      <div class="icon-send icon" fill="white"></div>
+      Primary
+    </a>
+    <a href="" class="button button__secondary button__icon">
+      <div class="icon-send icon" fill="black"></div>
+      Secondary
+    </a>
+    <a href="" class="button button__icon">
+      <div class="icon-send icon" fill="black"></div>
+      Default
+    </a>
+  </div>
+</xmp>
+          </code>
+        </pre>
+        <h3>Les inputs</h3>
+        <div class="row inputs-guide">
+          <div class="inputs-stack col-6">
+            <div class="input-container">
+              <input class="input" type="text" placeholder="Input sans icône" />
+            </div>
+            <div class="input-container">
+              <div class="icon-send icon" fill="black" height="21"></div>
+              <input
+                class="input"
+                type="text"
+                placeholder="Input icone gauche"
+              />
+            </div>
+            <div class="input-container">
+              <input
+                class="input"
+                type="text"
+                placeholder="Input icone droite"
+              />
+              <div class="icon-send icon" fill="black" height="21"></div>
+            </div>
+          </div>
+          <div class="inputs-stack col-6">
+            <div class="input-container">
+              <input class="input" type="text" placeholder="Double input" />
+              <div class="input-double-separator"></div>
+              <input class="input" type="text" placeholder="Double input" />
+            </div>
+            <div class="input-container">
+              <textarea
+                class="input"
+                placeholder="Votre message"
+                rows="5"
+              ></textarea>
+            </div>
+          </div>
+        </div>
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <div class="input-container">
+    <input class="input" type="text" placeholder="Input sans icône" />
+  </div>
+  <div class="input-container">
+    <div class="icon-send icon" fill="black" height="21"></div>
+    <input class="input" type="text" placeholder="Input icone gauche" />
+  </div>
+  <div class="input-container">
+    <input class="input" type="text" placeholder="Input icone droite" />
+    <div class="icon-send icon" fill="black" height="21"></div>
+  </div>
+  <div class="input-container">
+    <input class="input" type="text" placeholder="Double input" />
+    <div class="input-double-separator"></div>
+    <input class="input" type="text" placeholder="Double input" />
+  </div>
+  <div class="input-container">
+    <textarea
+      class="input"
+      placeholder="Votre message"
+      rows="5"
+    ></textarea>
+  </div>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="card-section">
+        <h2>Les cartes</h2>
+        <div class="row justify-around align-start my-5">
+          <article class="card">
+            <header>
+              <h3>Card title</h3>
+            </header>
+            <main>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Quisquam, quae.
+              </p>
+            </main>
+            <footer>
+              <a href="" class="button button__primary">Primary</a>
+            </footer>
+          </article>
+          <article class="card bg-neutral0 card__destination">
+            <aside class="card__full_image">
+              <img src="/assets/img/cards/Pisa_Tower.png" alt="Tour de Pise" />
+            </aside>
+            <header>
+              <h3>Card Title</h3>
+            </header>
+            <main>
+              <section>
+                <div class="row align-center">
+                  <span
+                    class="icon-location"
+                    width="20"
+                    height="20"
+                    stroke="orange"
+                  ></span>
+                  <small>Lorem, ipsum dolor </small>
+                </div>
+              </section>
+            </main>
+          </article>
+          <article class="card">
+            <aside class="card__thumbnail">
+              <img src="/assets/img/reviews/Colombia.png" alt="" />
+            </aside>
+            <header class="card__header">
+              <h3>Card title</h3>
+            </header>
+            <main>
+              <section class="card__description">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Aliquam unde sunt reiciendis quia fugiat tempore possimus
+                  quibusdam, et vitae aperiam nesciunt porro, maxime eum quasi
+                  cum dolores officia soluta reprehenderit.
+                </p>
+              </section>
+              <a href="">En savoir plus</a>
+            </main>
+            <footer></footer>
+          </article>
+        </div>
+
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <!-- Variante 1 -->
+  <article class="card">
+    <header>
+      <h3>Card title</h3>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quisquam, quae.
+      </p>
+    </main>
+    <footer>
+      <a href="" class="button button__primary">Primary</a>
+    </footer>
+  </article>
+
+  <!-- Variante 2 -->
+  <article class="card bg-neutral0 card__destination">
+    <aside class="card__full_image">
+      <img src="/assets/img/cards/Pisa_Tower.png" alt="Tour de Pise" />
+    </aside>
+    <header>
+      <h3>Card Title</h3>
+    </header>
+    <main>
+      <section>
+        <div class="row align-center">
+          <span
+            class="icon-location"
+            width="20"
+            height="20"
+            stroke="orange"
+          ></span>
+          <small>Lorem, ipsum dolor </small>
+        </div>
+      </section>
+    </main>
+  </article>
+
+  <!-- Variante 3 -->
+  <article class="card">
+    <aside class="card__thumbnail">
+      <img src="/assets/img/reviews/Colombia.png" alt="" />
+    </aside>
+    <header class="card__header">
+      <h3>Card title</h3>
+    </header>
+    <main>
+      <section class="card__description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Aliquam unde sunt reiciendis quia fugiat tempore possimus
+          quibusdam, et vitae aperiam nesciunt porro, maxime eum quasi
+          cum dolores officia soluta reprehenderit.
+        </p>
+      </section>
+      <a href="">En savoir plus</a>
+    </main>
+
+  </article>
+</xmp>
+          </code>
+        </pre>
+      </section>
+      <section class="header-section">
+        <h2>Header et Footer</h2>
+        <h3>Header</h3>
+        <p>
+          Dans cet exemple, le header a un fond gris pour faciliter la
+          lisibilité. En pratique, celui-ci est blanc. (Nous avons utilisé la
+          classe
+          <span class="code">bg-neutral100</span> dans cet exemple)
+        </p>
+        <br />
+        <header
+          class="align-center justify-between header bg-neutral100 ignore"
+        >
+          <div class="header__left align-center">
+            <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+
+            <nav>
+              <ul>
+                <a href="/pages" class="px-3">
+                  <li>Accueil</li>
+                </a>
+                <a href="/pages" class="px-3">
+                  <li>Destinations</li>
+                </a>
+                <a href="/pages" class="px-3">
+                  <li>A propos</li>
+                </a>
+                <a href="/pages" class="px-3">
+                  <li>Contact</li>
+                </a>
+                <div class="break-line"></div>
+                <a href="/pages/register.html" class="px-3 lg-max"
+                  ><li>S'inscrire</li></a
+                >
+                <a
+                  href="/pages/login.html"
+                  class="button button__primary px-3 lg-max"
+                  ><li>Se connecter</li></a
+                >
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__right lg-min justify-end align-center">
+            <a href="/pages/register.html">S'inscrire</a>
+            <a href="/pages/login.html" class="button button__primary m-left-6"
+              >Se connecter</a
+            >
+          </div>
+          <div class="header__burger lg-max">
+            <div class="burger-menu">
+              <div class="burger-menu__line"></div>
+              <div class="burger-menu__line"></div>
+              <div class="burger-menu__line"></div>
+            </div>
+          </div>
+        </header>
+        <br />
+        <h4>Markup HTML</h4>
+        <pre>
+        <code>
+<xmp>
+  <header class="align-center justify-between header ">
+    <div class="header__left align-center">
+      <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+
+      <nav>
+        <ul>
+          <a href="/pages" class="px-3">
+            <li>Accueil</li>
+          </a>
+          <a href="/pages" class="px-3">
+            <li>Destinations</li>
+          </a>
+          <a href="/pages" class="px-3">
+            <li>A propos</li>
+          </a>
+          <a href="/pages" class="px-3">
+            <li>Contact</li>
+          </a>
+          <div class="break-line"></div>
+          <a href="/pages/register.html" class="px-3 lg-max"
+            ><li>S'inscrire</li></a
+          >
+          <a
+            href="/pages/login.html"
+            class="button button__primary px-3 lg-max"
+            ><li>Se connecter</li></a
+          >
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__right lg-min justify-end align-center">
+      <a href="/pages/register.html">S'inscrire</a>
+      <a href="/pages/login.html" class="button button__primary m-left-6"
+        >Se connecter</a
+      >
+    </div>
+    <div class="header__burger lg-max">
+      <div class="burger-menu">
+        <div class="burger-menu__line"></div>
+        <div class="burger-menu__line"></div>
+        <div class="burger-menu__line"></div>
+      </div>
+    </div>
+  </header>
+</xmp> 
+        </code>
+      </pre>
+        <h3>Footer</h3>
+        <br />
+        <footer class="footer">
+          <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+          <div>
+            <h2>Nos pages</h2>
+            <ul>
+              <li>Accueil</li>
+              <li>Destinations</li>
+              <li>À propos</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+        </footer>
+        <h4>Markup HTML</h4>
+        <pre>
+          <code>
+<xmp>
+  <footer class="footer">
+    <img src="/assets/svg/FarawayLogo.svg" alt="logo" />
+    <div>
+      <h2>Nos pages</h2>
+      <ul>
+        <li>Accueil</li>
+        <li>Destinations</li>
+        <li>À propos</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </footer>
+</xmp> 
+          </code>
+        </pre>
+      </section>
+    </main>
+  </body>
+</html>

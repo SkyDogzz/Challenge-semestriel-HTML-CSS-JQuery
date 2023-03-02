@@ -1,0 +1,24 @@
+pre {
+  border-radius: $raduis;
+  background: #1e1e1e;
+  overflow-y: auto;
+  color: $neutral100;
+  & * {
+    background: transparent;
+  }
+  code {
+    display: block;
+    margin: rem(-30px) 0;
+  }
+  xmp {
+    margin: 0;
+  }
+}
+
+.code {
+  background: $neutral100;
+  padding: 0 rem(5px);
+  color: $primary500;
+  //avoid word break
+  white-space: nowrap;
+}

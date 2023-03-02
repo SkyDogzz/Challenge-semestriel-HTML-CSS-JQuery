@@ -115,3 +115,7 @@ a {
   flex-direction: column;
   gap: rem(50px);
 }
+
+.no-overflow {
+  overflow: hidden;
+}
