@@ -3,6 +3,7 @@
 @import "partials/grid";
 @import "partials/typography";
 @import "partials/global";
+@import "partials/components/code";
 @import "partials/components/button";
 @import "partials/components/cards";
 @import "partials/components/slider";
@@ -18,3 +19,5 @@
 @import "partials/utils/colors";
 @import "partials/utils/flex";
 @import "partials/utils/responsive";
+//page specific styles
+@import "pages/style_guide";
