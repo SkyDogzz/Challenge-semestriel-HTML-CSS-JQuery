@@ -1,6 +1,8 @@
 pre {
-  background: $neutral100;
+  border-radius: $raduis;
+  background: #1e1e1e;
   overflow-y: auto;
+  color: $neutral100;
   & * {
     background: transparent;
   }
@@ -14,7 +16,7 @@ pre {
 }
 
 .code {
-  background: $neutral100;
+  background: transparent;
   padding: 0 rem(5px);
   color: $primary500;
 }

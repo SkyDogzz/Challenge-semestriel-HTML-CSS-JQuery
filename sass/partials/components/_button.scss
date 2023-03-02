@@ -10,6 +10,8 @@
   cursor: pointer;
   border-radius: rem($raduis);
 
+  transition: background-color 0.2s ease-in-out;
+
   &__icon {
     display: flex;
     align-items: center;
@@ -21,7 +23,7 @@
   }
 
   &:hover {
-    background: $neutral50;
+    background: $neutral200;
   }
 
   &__primary {

@@ -1,6 +1,6 @@
 $card-padding: rem(15px);
 .card {
-  @include boxes($card-padding, 1, $neutral50);
+  @include boxes($card-padding, 1, $neutral100);
   display: flex;
   flex-direction: column;
   gap: rem(15px);
