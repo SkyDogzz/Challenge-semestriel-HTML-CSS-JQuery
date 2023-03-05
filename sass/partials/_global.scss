@@ -199,3 +199,25 @@ a {
   background-repeat: no-repeat;
   gap: rem(50px);
 }
+
+.search-section {
+  & > .row {
+    position: relative;
+    top: rem(-20px);
+    max-width: 1300px;
+    margin: 0 auto;
+
+    & .button {
+      margin: auto;
+    }
+
+    border-bottom: 1px solid $neutral200;
+    padding-bottom: rem(24px);
+    @media screen and (max-width: $md) {
+      gap: rem(20px);
+    }
+  }
+  .card {
+    width: 280px;
+  }
+}

@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
 $titlesSizes: rem(32px), rem(24px), rem(20px);
 $titleWheight: 700, 600, 500;
@@ -16,7 +16,8 @@ $cedarville-cursive: "Cedarville Cursive", cursive;
   font-family: $cedarville-cursive;
 }
 
-p {
+p,
+button {
   margin: 0;
   font-family: $popins-font;
   font-size: nth($fontsSizes, 1);
@@ -69,9 +70,8 @@ $arrow-width: rem(10px);
 }
 
 .explorer-title {
-
   &::after {
-    content : "";
+    content: "";
     position: absolute;
     display: block;
     justify-content: center;
@@ -85,7 +85,7 @@ $arrow-width: rem(10px);
   }
 }
 
-$alignments : (left, center, right); 
+$alignments: (left, center, right);
 
 @for $i from 1 through length($alignments) {
   .text-#{nth($alignments, $i)} {
