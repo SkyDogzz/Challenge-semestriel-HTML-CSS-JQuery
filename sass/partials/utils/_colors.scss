@@ -1,14 +1,24 @@
-$colors: (#e88011, #f38f1b, #ffb43d, #ffc059, #eeeeee, #fff, #000, #989898, #F6F6F6);
+$colors: (
+  #e88011,
+  #f38f1b,
+  #ffb43d,
+  #ffc059,
+  #ffcd7b,
+  #000,
+  #989898,
+  #f6f6f6f6,
+  #fff
+);
 $colorsNames: (
   primary500,
   primary400,
   primary300,
   primary200,
-  natural100,
-  neutral0,
+  primary100,
   neutral500,
+  neutral200,
   neutral100,
-  natural200,
+  neutral0
 );
 
 @for $i from 1 through length($colors) {
@@ -22,6 +32,4 @@ $colorsNames: (
   .text-#{$colorName} {
     color: $color;
   }
-  
 }
-
