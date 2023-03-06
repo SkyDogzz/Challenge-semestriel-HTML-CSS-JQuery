@@ -1,16 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
 
 $titlesSizes: rem(32px), rem(24px), rem(20px);
 $titleWheight: 700, 600, 500;
 $fontsSizes: rem(16px), rem(14px), rem(12px);
 
 $popins-font: "Poppins", sans-serif;
+$cedarville-cursive: "Cedarville Cursive", cursive;
 
 .poppins-font {
   font-family: $popins-font;
 }
 
-p {
+.cedarville-cursive {
+  font-family: $cedarville-cursive;
+}
+
+p,
+button {
   margin: 0;
   font-family: $popins-font;
   font-size: nth($fontsSizes, 1);
@@ -25,6 +32,14 @@ small {
   font-weight: 700;
 }
 
+.extra-bold {
+  font-weight: 900;
+}
+
+.destination-title {
+  font-size: 5vw;
+}
+
 @for $i from 1 through length($titlesSizes) {
   h#{$i} {
     margin: 0;
@@ -34,6 +49,7 @@ small {
   }
 }
 
+$arrow-width: rem(10px);
 .title-underline {
   display: inline-block;
   position: relative;
@@ -53,7 +69,23 @@ small {
   }
 }
 
-$alignments : (left, center, right); 
+.explorer-title {
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: $arrow-width;
+    height: $arrow-width;
+    border-left: solid black rem(3px);
+    border-bottom: solid black rem(3px);
+    transform: rotate(-45deg) translateX(-50%) translateY(-50%);
+    left: 50%;
+  }
+}
+
+$alignments: (left, center, right);
 
 @for $i from 1 through length($alignments) {
   .text-#{nth($alignments, $i)} {

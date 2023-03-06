@@ -139,6 +139,10 @@ class Slider {
       this.swipeTrack.appendChild(slide);
     });
     this.container.appendChild(this.swipeTrack);
+    this.container.style.setProperty(
+      "--slider-container-width",
+      `${this.container.offsetWidth}px`
+    );
   }
   /**
    * add transition class to the slide to get smooth animation
@@ -158,6 +162,11 @@ class Slider {
     this.container.classList[this.isDrag ? "add" : "remove"](
       "slider-container__grabbing"
     );
+    this.container.style.setProperty(
+      "--slider-container-width",
+      `${this.container.offsetWidth}px`
+    );
+
     this.slides.forEach((slide) => {
       slide.style.transform = `translateX(${this.translate}%)`;
     });
