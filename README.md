@@ -11,7 +11,9 @@ Contraintes globales :
 
 C'est un site de voyage qui permet de découvrir des destinations à travers le monde.
 
-# LANDING PAGE
+# LISTING PAGES
+
+## LANDING PAGE
 
 #### 1 SECTION
 - Carrousel avec des images des pays fares du moment et un bouton "En savoir plus" pour avoir des précisions (boutons avec effets vitrées)
@@ -31,7 +33,7 @@ C'est un site de voyage qui permet de découvrir des destinations à travers le 
 ### 6 SECTION 
 - Footer
 
-# DESTINATION PAGE
+## DESTINATION PAGE
 
 #### HERO
 - image de backgroud 
@@ -46,9 +48,16 @@ C'est un site de voyage qui permet de découvrir des destinations à travers le 
 #### SECTION 3
 - formulaire de contact
 
-# REGISTER + LOGIN PAGE
+## REGISTER + LOGIN PAGE
 
 - formulaire login
 - formulaire register
+
+# Plugin JS
+
+- Plugin icons
+- Slider
+- Burger menu
+- Map destination
 
 
