@@ -16,3 +16,11 @@
   color: $color;
   background-color: $bgColor;
 }
+
+@function opacityColor($color, $alpha) {
+  $red: red($color);
+  $green: green($color);
+  $blue: blue($color);
+
+  @return rgba($red, $green, $blue, $alpha);
+}

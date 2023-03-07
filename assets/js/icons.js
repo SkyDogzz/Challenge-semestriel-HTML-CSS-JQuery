@@ -1,6 +1,6 @@
 const iconsInit = () => {
   let icons = document.querySelectorAll("[class^='icon-']");
-  console.log(icons);
+
   icons.forEach(async (icon) => {
     let name = icon.classList[0].replace("icon-", "");
     let res = await fetch("/assets/icons/" + name + ".svg");

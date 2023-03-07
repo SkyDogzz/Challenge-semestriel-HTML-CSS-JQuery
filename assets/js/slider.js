@@ -14,7 +14,6 @@ class Slider {
     this.setup(); // create the wrapper
     this.handle(); // set up the event listener
     this.clear = this.loop(); // start the loop
-    console.log(this);
   }
 
   get itemsVisible() {

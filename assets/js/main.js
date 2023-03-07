@@ -16,10 +16,11 @@ import mapInit from "./map.js";
   document.querySelectorAll("[scroll-smooth]").forEach((anchor) => {
     anchor.addEventListener("click", function (e) {
       e.preventDefault();
-      console.log("ici", this.getAttribute("href").startsWith("#"));
+
       if (this.getAttribute("href").startsWith("#")) {
         document.querySelector(this.getAttribute("href")).scrollIntoView({
           behavior: "smooth",
+          block: "center",
         });
         return;
       }
@@ -35,6 +36,7 @@ import mapInit from "./map.js";
         const anchor = url.hash; // "#reviews"
         document.querySelector(anchor).scrollIntoView({
           behavior: "smooth",
+          block: "center",
         });
       }
     });

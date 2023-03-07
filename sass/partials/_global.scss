@@ -100,6 +100,19 @@ a {
       object-fit: cover;
     }
   }
+  article {
+    border: 2px solid opacityColor($neutral0, 0.5);
+
+    position: relative;
+    & span {
+      position: absolute;
+      top: rem(15px);
+      left: rem(15px);
+      color: $neutral0;
+      font-weight: 700;
+      font-size: larger;
+    }
+  }
 
   & .fix-place {
     position: absolute;
