@@ -30,3 +30,25 @@ C'est un site de voyage qui permet de découvrir des destinations à travers le 
 
 ### 6 SECTION 
 - Footer
+
+# DESTINATION PAGE
+
+#### HERO
+- image de backgroud 
+- caroussel villes
+
+#### SECTION 1
+- description du pays
+
+#### SECTION 2
+- mosaique
+
+#### SECTION 3
+- formulaire de contact
+
+# REGISTER + LOGIN PAGE
+
+- formulaire login
+- formulaire register
+
+
