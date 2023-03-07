@@ -5,7 +5,7 @@ Contraintes globales :
   <li>Full responsive (PC / Tablette / Smartphone)</li>
 </ul>
 
-## Site de Voyage - Nom (à définir)
+## Site de Voyage - FarAway Travel Agency
 
 ### CONCEPT 
 
